@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Kompleks</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="./assets/script.js" defer></script>
+</head>
+<body class="min-h-screen bg-black flex items-center justify-center p-4 md:p-8">
+
+<div id="loading" class="fixed inset-0 bg-black z-50 flex items-center justify-center">
+    <div class="loader"></div>
+</div>
+
+    <button id="langToggle" class="fixed top-4 right-4 lang-toggle bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full transition-all duration-300 cursor-pointer touch-manipulation z-50">
+        <div class="flex items-center justify-center">
+            <i class="fas fa-globe mr-2"></i>
+            <span class="lang-indicator text-white font-medium text-base md:text-lg select-none">TR</span>
+        </div>
+    </button>
+
+    <div id="particles-js" class="absolute inset-0"></div>
+
+    <div class="glass-card relative z-10 p-4 md:p-8 rounded-2xl backdrop-blur-md bg-white/20 shadow-xl w-full max-w-[90%] md:max-w-md mx-auto">
+
+        <div class="profile-picture mb-4 transform transition-transform hover:scale-105">
+            <img src="./assets/profile.jpg" alt="Profil Fotoğrafı" class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto border-4 border-white/50">
+        </div>
+
+        <div class="text-center mb-6">
+            <h1 class="text-white text-xl md:text-2xl font-bold mb-2" data-tr="Kompleks" data-en="Kompleks">Kompleks</h1>
+            <p class="text-white/80 text-sm md:text-base" data-tr="Geliştirici - Oyuncu" data-en="Developer • Gamer">Geliştirici - Oyuncu</p>
+        </div>
+
+<div class="social-links flex justify-center gap-4 md:gap-6 mb-6 md:mb-8">
+    <a href="https://discord.gg/a6XVaZeYGB" class="social-icon discord p-3 md:p-4" data-label-tr="Discord'da Takip Et" data-label-en="Follow on Discord">
+        <img src="./assets/discord_mobil.png" alt="Discord" class="w-8 h-8 md:w-10 md:h-10" 
+             srcset="./assets/discord_mobil.png 1x, ./assets/discord_pc.png 2x"> <!-- Mobil için discord_mobil.png, Masaüstü için discord_pc.png -->
+    </a>
+    <a href="https://www.youtube.com/@supremepoloo" class="social-icon youtube p-3 md:p-4" data-label-tr="YouTube'da Takip Et" data-label-en="Follow on YouTube">
+        <img src="./assets/youtube_mobil.png" alt="YouTube" class="w-8 h-8 md:w-10 md:h-10" 
+             srcset="./assets/youtube_mobil.png 1x, ./assets/youtube_pc.png 2x"> <!-- Mobil için youtube_mobil.png, Masaüstü için youtube_pc.png -->
+    </a>
+</div>
+
+        <div class="spotify-stats text-center text-white p-3 md:p-4">
+            <div class="flex items-center justify-center gap-2 mb-2">
+                <i class="fab fa-spotify text-xl md:text-2xl"></i>
+                <span class="text-base md:text-lg font-semibold" data-tr="Aylık Gelir 💸" data-en="Monthly income 💸">
+                    Aylık Gelir 💸
+                </span>
+            </div>
+            <div class="text-2xl md:text-3xl font-bold tracking-wide" data-tr="100 Bin+" data-en="100K+">100 Bin+</div>
+            <div class="text-sm md:text-base text-white/70 mt-1" data-tr="Kompleks & bulut0074" data-en="Kompleks & bulut0074">Kompleks & bulut0074</div>
+        </div>
+    </div>
+</body>
+</html>
